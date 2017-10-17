@@ -1,6 +1,6 @@
-#Writing "MD" files that can be converted to HTML with MDreader
+# WritingWriting "MD" files that can be converted to HTML with MDreader
 
-##1. Basic MD Text Entry
+## 1. Basic MD Text Entry
 
 Text is entered normally with only a single proportional font. Paragraphs must be separated by one (or more) lines of white space. Paragraphs are rendered with one line of white space between them even if two or more spacing lines are used in the text file. If no whitespace separates paragraphs MDreader will render them as one single continuous paragraph.
 
@@ -8,7 +8,7 @@ Text is entered normally with only a single proportional font. Paragraphs must b
  
 Extra spacing between paragraphs cannot be achieved easily.
 
-##2. Bold & Italic Text
+## 2. Bold & Italic Text
 
 *Text enclosed by 1 asterisk (touching the text at each end)* - italic
 
@@ -22,18 +22,18 @@ One can use underline characters instead of asterisks.
 
 
 
-##3. Indenting, Bullet point lists & Numbered lists.
->###Indenting
+## 3. Indenting, Bullet point lists & Numbered lists.
+>### IndentingIndenting
 
 To achieve Indenting use one or more Chevrons (>) at the start of the paragraph. This can also be used in conjunction with Headings, Bulleted lists and Numbered lists
 
->Indented text following a right Chevron (>)
+> Indented text following a right Chevron (>) &  space
 
->>And double indented following 2 right Chevrons (> >)
+>> And double indented following 2 right Chevrons (> >)
 
 The Chevron(s) must be at the very start of the line.
 
->###Bullets
+> ###Bullets
 
 * Text preceded by an asterisk and then a space - creates a bullet point.
 
@@ -41,13 +41,13 @@ The Chevron(s) must be at the very start of the line.
 
 * A final asterisk and space
 
->* An indented bullet
+> * An indented bullet
 
->>* And now a double indented bullet (2 Chevrons and an asterisk)
+>> * And now a double indented bullet (2 Chevrons and an asterisk)
 
->>>* And now a triple indented bullet (3 Chevrons and an asterisk)
+>>> * And now a triple indented bullet (3 Chevrons and an asterisk)
 
->###Numbered lists
+>### Numbered lists
 
 A numbered list item is formatted by starting a paragraph with any digit - e.g. 4. in the following list. The numbering is automatic (single digit). Just start each item with a digit, a dot and a space.
 
@@ -61,13 +61,13 @@ A numbered list item is formatted by starting a paragraph with any digit - e.g. 
 
 5. List item 4
 
->1. A Numbered list item with increased indenting. Note that when the indenting changes the numbering resets to 1. Numbering cannot be started at any number other than 1.
+> 1. A Numbered list item with increased indenting. Note that when the indenting changes the numbering resets to 1. Numbering cannot be started at any number other than 1.
 
->1. Some more text after 1 Chevron and a digit plus dot
+> 1. Some more text after 1 Chevron and a digit plus dot
 
 
 
-##4. Variable Headings: each throws a single (standard) line space after it. The heading will word wrap.
+## 4. Variable Headings: each throws a single (standard) line space after it. The heading will word wrap.
 
 ###### Preceeded by Six hashes and a space
 ##### Preceeded by Five hashes and a space
@@ -77,13 +77,13 @@ No \#s used on this line **4 \#s Appear equivalent to standard bold text (this).
 ##  Preceeded by Two hashes and a space
 #  Preceeded by One hash and a space
 
-##5. Page width lines.
+## 5. Page width lines.
 ***
 \*\*\* on a new line creates a pagewide line. Useful as a separator given that paragraph separation is not variable.
 ***
 
 
-##6. In Line Text
+## 6. In Line Text
 
 In line text is **not** supported by MDreader's html renderer, but is OK in QuickEdit. The character used (`) is found via the ?123 and then =\\< alternative keyboard. This is known as a'tickback' on github, it seems.
 
@@ -121,19 +121,19 @@ git commit
 
 
 
-##7. HyperLINKs
+## 7. HyperLINKs
 
 To create a clickable link to http://github.com/login - enter \[Git-Hub](http://github.com/login) Which appears thus: [Git-Hub](http://github.com/login)
 
 
-##8. Images
+## 8. Images
 To insert an image into a document use: 
 \!\[AnImage]\(/storage/emulated/0/documents/tmp/statusboard-statuszero-docs-master/images/status-zero.jpg) displays an image (see below).
 
 ![AnImage](/storage/emulated/0/documents/tmp/statusboard-statuszero-docs-master/images/status-zero.jpg)
 
 
-##9. Tables
+## 9. Tables
 Not supported by QuickEdit or the MdReader App, but are (supposed) to be supported on Github.
 
 First Header|Second Header
@@ -142,6 +142,6 @@ Content cell 1 | Content cell 2
 Content column 1 | Content column 2
 
 
-##10. Conclusion
+## 10. Conclusion
 MarkDown is not standardised - it is different on Github, QuickEdit and MdReader. Using these methods in QuickEdit and MDreader will allow reasonably consistent results to be achieved.
 
