@@ -1,12 +1,16 @@
-# WritingWriting "MD" files that can be converted to HTML with MDreader
+# Writing "MD" files that can be converted to HTML with MDreader
 
 ## 1. Basic MD Text Entry
 
 Text is entered normally with only a single proportional font. Paragraphs must be separated by one (or more) lines of white space. Paragraphs are rendered with one line of white space between them even if two or more spacing lines are used in the text file. If no whitespace separates paragraphs MDreader will render them as one single continuous paragraph.
 
-€¥$¢√π÷ are handled 
+€¥$¢√π÷ etc. are handled correctly.
  
 Extra spacing between paragraphs cannot be achieved easily.
+
+All formatting codes (*, #, > etc.) must be followed by a space to work correctly in git.
+
+There seems to be a problem with editing the README.MD text directly on Github via android and Firefox. Text changed and disappeared quite unpredictably. I did manage to make some changes to this file but odd word duplications occurred so I plan to upload a revision created offline (this version) and of README.md.
 
 ## 2. Bold & Italic Text
 
@@ -18,12 +22,13 @@ Extra spacing between paragraphs cannot be achieved easily.
 
 One can use underline characters instead of asterisks.
 
-****Enclosed by 4 asterisks (touching the text at each end)**** - no effect in QuickEdit but is interpreted as bold + italic in MdReader.
+****Enclosed by 4 asterisks (touching the text at each end)**** - no effect in QuickEdit but is interpreted as bold + italic in MdReader. This is followed by 3 lines of whitespace.
 
 
 
 ## 3. Indenting, Bullet point lists & Numbered lists.
->### IndentingIndenting
+
+>### Indenting
 
 To achieve Indenting use one or more Chevrons (>) at the start of the paragraph. This can also be used in conjunction with Headings, Bulleted lists and Numbered lists
 
@@ -33,7 +38,7 @@ To achieve Indenting use one or more Chevrons (>) at the start of the paragraph.
 
 The Chevron(s) must be at the very start of the line.
 
-> ###Bullets
+> ### Bullets
 
 * Text preceded by an asterisk and then a space - creates a bullet point.
 
@@ -51,7 +56,7 @@ The Chevron(s) must be at the very start of the line.
 
 A numbered list item is formatted by starting a paragraph with any digit - e.g. 4. in the following list. The numbering is automatic (single digit). Just start each item with a digit, a dot and a space.
 
-4. Lots of information. Lots more information. Lots more information. Lots more information. Lots more information. Lots more information.
+4. Starting a list with a 4. allows you to select the value of the first list item with a 4 in Github, but in QuickEdit and MDreader lists always start at 1.
 
 1. Lots more information. Lots more information. Lots more information. Lots more information. Lots more information. Lots more information.
 
@@ -63,7 +68,7 @@ A numbered list item is formatted by starting a paragraph with any digit - e.g. 
 
 > 1. A Numbered list item with increased indenting. Note that when the indenting changes the numbering resets to 1. Numbering cannot be started at any number other than 1.
 
-> 1. Some more text after 1 Chevron and a digit plus dot
+> 1. Some more text after 1 Chevron and a digit plus dot. There is **NO** automatic numbering of indented lists in Github this should be shown as item 2.
 
 
 
