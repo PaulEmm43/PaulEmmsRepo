@@ -8,7 +8,7 @@ Text is entered normally with only a single proportional font. Paragraphs must b
  
 Extra spacing between paragraphs cannot be achieved easily.
 
-All formatting codes (*, #, > etc.) must be followed by a space to work correctly in git.
+All formatting codes (\*, #, > etc.) except *italic* and **bold** must be followed by a space to work correctly in git.
 
 There seems to be a problem with editing the README.MD text directly on Github via android and Firefox. Text changed and disappeared quite unpredictably. I did manage to make some changes to this file but odd word duplications occurred so I plan to upload a revision created offline (this version) and of README.md.
 
@@ -30,7 +30,7 @@ One can use underline characters instead of asterisks.
 
 >### Indenting
 
-To achieve Indenting use one or more Chevrons (>) at the start of the paragraph. This can also be used in conjunction with Headings, Bulleted lists and Numbered lists
+To achieve Indenting use one or more Chevrons (>) at the start of the paragraph. This can also be used in conjunction with Headings and Bulleted lists and but not Numbered lists (in Github only). The indented text is marked in the left margin with a vertical bar in Github.
 
 > Indented text following a right Chevron (>) &  space
 
@@ -56,7 +56,7 @@ The Chevron(s) must be at the very start of the line.
 
 A numbered list item is formatted by starting a paragraph with any digit - e.g. 4. in the following list. The numbering is automatic (single digit). Just start each item with a digit, a dot and a space.
 
-4. Starting a list with a 4. allows you to select the value of the first list item with a 4 in Github, but in QuickEdit and MDreader lists always start at 1.
+4. Starting a list with a 4. allows you to select the value shown for the first list item as 4 in Github, but in QuickEdit and MDreader lists always start at 1.
 
 1. Lots more information. Lots more information. Lots more information. Lots more information. Lots more information. Lots more information.
 
@@ -88,7 +88,7 @@ No \#s used on this line **4 \#s Appear equivalent to standard bold text (this).
 ***
 
 
-## 6. In Line Text
+## 6. In Line Text and quoting code
 
 In line text is **not** supported by MDreader's html renderer, but is OK in QuickEdit. The character used (`) is found via the ?123 and then =\\< alternative keyboard. This is known as a'tickback' on github, it seems.
 
@@ -109,7 +109,7 @@ Code Line 6
 
 Quoting code
 
-You can call out code or a command within a sentence with single backticks. The text within the backticks will not be formatted.
+You can call out code or a command within a sentence with single backticks. The text within the backticks will not be formatted. The backtick is ASCII 0x60.
 
 Use `git status` to list all new or modified files that haven't yet been committed.
 
@@ -139,7 +139,7 @@ To insert an image into a document use:
 
 
 ## 9. Tables
-Not supported by QuickEdit or the MdReader App, but are (supposed) to be supported on Github.
+Not supported by QuickEdit or the MdReader App, but are supported on Github.
 
 First Header|Second Header
 ------------|-------------
@@ -148,5 +148,5 @@ Content column 1 | Content column 2
 
 
 ## 10. Conclusion
-MarkDown is not standardised - it is different on Github, QuickEdit and MdReader. Using these methods in QuickEdit and MDreader will allow reasonably consistent results to be achieved.
+MarkDown is not standardised - it is different on Github, QuickEdit and MdReader. Using these methods in Github, QuickEdit and MDreader will allow reasonably consistent results to be achieved.
 
