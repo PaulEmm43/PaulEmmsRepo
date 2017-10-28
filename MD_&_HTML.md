@@ -90,12 +90,11 @@ No \#s used on this line **4 \#s Appear equivalent to standard bold text (this).
 
 ## 6. In Line Text and quoting code
 
-In line text is **not** supported by MDreader's html renderer, but is OK in QuickEdit. The character used (`) is found via the ?123 and then =\\< alternative keyboard. This is known as a'tickback' on github, it seems.
+In line text blocks using groups of 3 tickback characters (\` ASCII 0x60) is **not** supported by MDreader's html renderer, but is OK in QuickEdit. The character used (`) is found via the ?123 and then =\\< alternative keyboard. This is known as a'tickback' on github, it seems.
 
 ``` python
-
-Code line 1
-Code line 2 followed by whitespace
+Code line 1 followed by no whitespace
+Code line 2 followed by 1 line of whitespace
 
 Code Line 3 followed by 2 lines of **whitespace** (this is shown bold by MDreader)
 
@@ -109,9 +108,14 @@ Code Line 6
 
 Quoting code
 
-You can call out code or a command within a sentence with single backticks. The text within the backticks will not be formatted. The backtick is ASCII 0x60.
+You can call out code or a command within a sentence or on a line by line basis by enclosing it with single backticks. The text within the backticks will not be formatted. The backtick is ASCII 0x60.
 
 Use `git status` to list all new or modified files that haven't yet been committed.
+
+`This is a line of quoted text`
+`Another line of quoted text`
+
+`Another yet another line of quoted text after a line of whitespace`
 
 Rendered inline code block
 
