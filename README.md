@@ -8,4 +8,7 @@ And that it's not so hard after all.
 
 ## A New Beginning?
 
-Found that editing files directly on Github using Firefox and android on my Hudl was almost impossible.
+Found that editing files directly on Github using Firefox and android on my Hudl
+was almost impossible.
+
+Correction - it is absolutely horrible.
