@@ -12,6 +12,8 @@ All formatting codes (\*, #, > etc.) except *italic* and **bold** must be follow
 
 There seems to be a problem with editing the README.MD text directly on Github via android and Firefox. Text changed and disappeared quite unpredictably. I did manage to make some changes to this file but odd word duplications occurred so I plan to upload a revision created offline (this version) and of README.md.
 
+I am, on 1/10/2019, attempting to edit the text of this document by adding this sentence. It is hard to control the formatting. But I have succeeded. 
+
 ## 2. Bold & Italic Text
 
 *Text enclosed by 1 asterisk (touching the text at each end)* - italic
